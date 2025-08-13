@@ -68,7 +68,7 @@ mobile-app/
 
 1️⃣ **Clone the repository**
 ```sh
-git clone <repo-url>
+git clone https://github.com/Sinyalku-Project/mobile-app.git
 cd mobile-app
 ```
 
