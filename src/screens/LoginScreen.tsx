@@ -7,7 +7,6 @@ import {
   StyleSheet,
   Alert,
   KeyboardAvoidingView,
-  Platform,
   ScrollView,
   TouchableWithoutFeedback,
   Keyboard,
@@ -15,9 +14,9 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Ionicons from 'react-native-vector-icons/Ionicons'; 
+import Eyeicon from 'react-native-vector-icons/Feather'; 
 
-const API_BASE_URL = 'https://backend-api-1-6xei.onrender.com';
+const API_BASE_URL = 'https://backend-api-x0h2.onrender.com';
 
 interface LoginScreenProps {
   navigation: any;
@@ -43,8 +42,8 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
     <SafeAreaView style={{ flex: 1, backgroundColor: '#f5f5f5' }}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-        keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 20}
+        behavior="height"
+        keyboardVerticalOffset={20}
       >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <ScrollView
@@ -61,7 +60,6 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
               onChangeText={setUsername}
             />
 
-            {/* Password */}
             <View style={styles.passwordContainer}>
               <TextInput
                 style={styles.input}
@@ -75,7 +73,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
                 style={styles.eyeButton}
                 onPress={() => setSecureText(!secureText)}
               >
-                <Ionicons
+                <Eyeicon
                   name={secureText ? 'eye-off' : 'eye'}
                   size={24}
                   color="#999"

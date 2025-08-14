@@ -16,7 +16,7 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-const API_BASE_URL = 'https://backend-api-1-6xei.onrender.com';
+const API_BASE_URL = 'https://backend-api-x0h2.onrender.com';
 
 
 // Define TypeScript interfaces
@@ -271,7 +271,7 @@ const HomeScreen: React.FC = () => {
           <Text style={styles.infoTitle}>How it works:</Text>
           <Text style={styles.infoText}>• SinyalKu collects your location & signal strength data every 30 seconds</Text>
           <Text style={styles.infoText}>• Data is sent to our servers to improve coverage maps</Text>
-          <Text style={styles.infoText}>• Coverage Maps: coverageMapLink </Text>
+          <Text style={styles.infoText}>• Coverage Maps: sinyalku.netlify.app </Text>
         </View>
       </ScrollView>
     </SafeAreaView>

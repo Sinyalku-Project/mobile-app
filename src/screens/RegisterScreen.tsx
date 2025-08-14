@@ -14,9 +14,9 @@ import {
 } from 'react-native';
 import axios from 'axios';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Eyeicon from 'react-native-vector-icons/Feather';
 
-const API_BASE_URL = 'https://backend-api-1-6xei.onrender.com';
+const API_BASE_URL = 'https://backend-api-x0h2.onrender.com';
 
 interface RegisterScreenProps {
   navigation: any;
@@ -76,7 +76,6 @@ const RegisterScreen: React.FC<RegisterScreenProps> = ({ navigation }) => {
               onChangeText={setEmail}
             />
 
-            {/* Password */}
             <View style={styles.passwordContainer}>
               <TextInput
                 style={styles.input}
@@ -90,7 +89,7 @@ const RegisterScreen: React.FC<RegisterScreenProps> = ({ navigation }) => {
                 style={styles.eyeButton}
                 onPress={() => setSecurePassword(!securePassword)}
               >
-                <Ionicons
+                <Eyeicon
                   name={securePassword ? 'eye-off' : 'eye'}
                   size={24}
                   color="#999"
@@ -98,7 +97,6 @@ const RegisterScreen: React.FC<RegisterScreenProps> = ({ navigation }) => {
               </TouchableOpacity>
             </View>
 
-            {/* Confirm Password */}
             <View style={styles.passwordContainer}>
               <TextInput
                 style={styles.input}
@@ -112,7 +110,7 @@ const RegisterScreen: React.FC<RegisterScreenProps> = ({ navigation }) => {
                 style={styles.eyeButton}
                 onPress={() => setSecureConfirm(!secureConfirm)}
               >
-                <Ionicons
+                <Eyeicon
                   name={secureConfirm ? 'eye-off' : 'eye'}
                   size={24}
                   color="#999"
