@@ -103,6 +103,18 @@ API_BASE_URL=http://<your-api-server>:8000
 
 ---
 
+## 📦 APK Release & Download
+
+The latest SinyalKu APK is built and released for direct installation on Android devices.
+You can find it after building the project at:
+`mobile-app\android\app\build\outputs\apk\release\app-release.apk`
+To install:
+1. Transfer app-release.apk to your Android device.
+2. Enable Install from Unknown Sources in device settings.
+3. Tap the APK file to install.
+
+---
+
 ## 🛠 Development Notes
 
 - **SignalStrengthModule** (Java/Kotlin) is implemented in `android/app/src/main/java/com/sinyalkuapp/`.
